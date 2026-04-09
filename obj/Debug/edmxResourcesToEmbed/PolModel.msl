@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MasterPolModel1Container" CdmEntityContainer="MasterPolEntities1">
+    <EntitySetMapping Name="Partner_products">
+      <EntityTypeMapping TypeName="MasterPolModel1.Partner_products">
+        <MappingFragment StoreEntitySet="Partner_products">
+          <ScalarProperty Name="idSale" ColumnName="idSale" />
+          <ScalarProperty Name="idArticle" ColumnName="idArticle" />
+          <ScalarProperty Name="idPartner" ColumnName="idPartner" />
+          <ScalarProperty Name="countProduct" ColumnName="countProduct" />
+          <ScalarProperty Name="dateOfSale" ColumnName="dateOfSale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners">
+      <EntityTypeMapping TypeName="MasterPolModel1.Partner">
+        <MappingFragment StoreEntitySet="Partners">
+          <ScalarProperty Name="idPartner" ColumnName="idPartner" />
+          <ScalarProperty Name="typePartner" ColumnName="typePartner" />
+          <ScalarProperty Name="namePartner" ColumnName="namePartner" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="adress" ColumnName="adress" />
+          <ScalarProperty Name="inn" ColumnName="inn" />
+          <ScalarProperty Name="rate" ColumnName="rate" />
+          <ScalarProperty Name="surnameDirector" ColumnName="surnameDirector" />
+          <ScalarProperty Name="nameDirector" ColumnName="nameDirector" />
+          <ScalarProperty Name="patronymicDirector" ColumnName="patronymicDirector" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners_type">
+      <EntityTypeMapping TypeName="MasterPolModel1.Partners_type">
+        <MappingFragment StoreEntitySet="Partners_type">
+          <ScalarProperty Name="idTypePartner" ColumnName="idTypePartner" />
+          <ScalarProperty Name="typePartner" ColumnName="typePartner" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_type">
+      <EntityTypeMapping TypeName="MasterPolModel1.Product_type">
+        <MappingFragment StoreEntitySet="Product_type">
+          <ScalarProperty Name="idTypeProduct" ColumnName="idTypeProduct" />
+          <ScalarProperty Name="typeProduct" ColumnName="typeProduct" />
+          <ScalarProperty Name="koefOfType" ColumnName="koefOfType" />
+          <ScalarProperty Name="koefOfBrak" ColumnName="koefOfBrak" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="MasterPolModel1.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="idArticle" ColumnName="idArticle" />
+          <ScalarProperty Name="typeProduct" ColumnName="typeProduct" />
+          <ScalarProperty Name="nameProduct" ColumnName="nameProduct" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="MasterPolModel1.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="idRole" ColumnName="idRole" />
+          <ScalarProperty Name="nameRole" ColumnName="nameRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="MasterPolModel1.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="loginUser" ColumnName="loginUser" />
+          <ScalarProperty Name="passwordUser" ColumnName="passwordUser" />
+          <ScalarProperty Name="idRole" ColumnName="idRole" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
